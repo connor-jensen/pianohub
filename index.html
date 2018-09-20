@@ -6,7 +6,28 @@
       <title>pianohub</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-      <link rel="stylesheet" href="css/main.css"
+      <link rel="stylesheet" href="css/main.css">
+      <script>
+    function hidingVids() {
+    var x = document.getElementById("video1");
+    if (x.style.display == "none") {
+        document.getElementById("video1").style.display = "block";
+        document.getElementById("video2").style.display = "block";
+        document.getElementById("video3").style.display = "block";
+        document.getElementById("video4").style.display = "block";
+        document.getElementById("video5").style.display = "block";
+        document.getElementById("video6").style.display = "block";
+
+    } else {
+        document.getElementById("video1").style.display = "none";
+        document.getElementById("video2").style.display = "none";
+        document.getElementById("video3").style.display = "none";
+        document.getElementById("video4").style.display = "none";
+        document.getElementById("video5").style.display = "none";
+        document.getElementById("video6").style.display = "none";
+    }
+    }
+</script>
   </head>
   <body>
     <nav class= "navbar">
@@ -35,6 +56,9 @@
       A Selection of Music
       </p>
     </div>
+  <div>
+ <button onclick="hidingVids()" style="float: right;">Click to show or hide videos</button>
+  </div>
   </section>
      <div class="container">
         <div class="section">
@@ -42,7 +66,7 @@
               <div class="column is-one-third">
                  <div class="card">
                     <div class="card-image">
-                       <div class="videoWrapper">
+                       <div id="video1" class="videoWrapper">
                           <iframe width="560" height="315" src="https://www.youtube.com/embed/GJ1qBk_EOto" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                        </div>
                     </div>
@@ -64,7 +88,7 @@
               <div class="column is-one-third">
                  <div class="card">
                     <div class="card-image">
-                       <div class="videoWrapper">
+                       <div id="video2" class="videoWrapper">
                           <iframe width="560" height="315" src="https://www.youtube.com/embed/ykKrBZbgTIA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                        </div>
                     </div>
@@ -86,7 +110,7 @@
               <div class="column is-one-third">
                  <div class="card">
                     <div class="card-image">
-                       <div class="videoWrapper">
+                       <div  id="video3" class="videoWrapper">
                           <iframe width="560" height="315" src="https://www.youtube.com/embed/sbTVZMJ9Z2I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                        </div>
                     </div>
@@ -110,8 +134,8 @@
               <div class="column is-one-third">
                  <div class="card">
                     <div class="card-image">
-                       <div class="videoWrapper">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/u0gfVXvliNA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                       <div id="video4" class="videoWrapper">
+                          <iframe   width="560" height="315" src="https://www.youtube.com/embed/u0gfVXvliNA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                        </div>
                     </div>
                     <div class="card-content">
@@ -132,7 +156,7 @@
               <div class="column is-one-third">
                  <div class="card">
                     <div class="card-image">
-                       <div class="videoWrapper">
+                       <div id="video5" class="videoWrapper">
                           <iframe width="560" height="315" src="https://www.youtube.com/embed/aeEmGvm7kDk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                        </div>
                     </div>
@@ -154,8 +178,8 @@
               <div class="column is-one-third">
                  <div class="card">
                     <div class="card-image">
-                       <div class="videoWrapper">
-                          <iframe width="560" height="315" src="https://www.youtube.com/embed/sCtixpIWBto" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                       <div id="video6" class="videoWrapper">
+                          <iframe  width="560" height="315" src="https://www.youtube.com/embed/sCtixpIWBto" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                        </div>
                     </div>
                     <div class="card-content">
